@@ -26,6 +26,20 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Feature
+
+- [x] Typeorm
+- [x] Mongodb
+- [x] 自动验证传入参数
+- [x] 自动转换传入参数
+- [x] 自动生成 API 文档
+- [ ] 自动生成 API 接口调用
+- [x] 识别环境（prod 生产, dev 预发, local 本地开发, ..）
+- [x] 自动加载环境变量
+- [x] API 版本管理（URL 方式）
+- [x] 单元测试
+- [x] E2E 测试
+
 ## Installation
 
 ```bash
@@ -35,11 +49,8 @@ $ npm install
 ## Running the app
 
 ```bash
-# development
+# local development
 $ npm run start
-
-# watch mode
-$ npm run start:dev
 
 # production mode
 $ npm run start:prod
