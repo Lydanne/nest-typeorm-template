@@ -40,6 +40,18 @@
 - [x] API 版本管理（URL 方式）
 - [x] 单元测试
 - [x] E2E 测试
+- [x] 支持 VSCode 单元测试
+
+## VSCode Plugin
+
+```
+名称: Jest
+ID: orta.vscode-jest
+说明: Use Facebook's Jest With Pleasure.
+版本: 4.1.2
+发布者: Orta
+VS Marketplace 链接: https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest
+```
 
 ## Installation
 
