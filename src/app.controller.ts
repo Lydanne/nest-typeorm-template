@@ -8,6 +8,11 @@ import { HelloDto } from './dto/hello.dto';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
+  /**
+   * 获取Hello
+   * @param helloDto 传入参数
+   * @returns 返回字符串
+   */
   @Post('hello')
   getHello(@Body() helloDto: HelloDto): string {
     console.log(helloDto.foo);
