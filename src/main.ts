@@ -1,10 +1,10 @@
 import './boot/env';
+import hmr from './boot/hmr';
+import swagger from './boot/swagger';
 import { ValidationPipe, VersioningType } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
-import hmr from './boot/hmr';
-import swagger from './boot/swagger';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
