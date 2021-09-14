@@ -18,13 +18,9 @@
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
     "paths": {
-      "@api-sdk/api-sdk": [
-        "libs/api-sdk/src"
-      ],
-      "@api-sdk/api-sdk/*": [
-        "libs/api-sdk/src/*"
-      ]
+      "@api-sdk/api-sdk": ["libs/api-sdk/src"],
+      "@api-sdk/api-sdk/*": ["libs/api-sdk/src/*"]
     }
   },
-  "include": ["src/**/*.d.ts", "src/**/*.ts"]
+  "include": ["src/**/*.d.ts", "src/**/*.ts", "test/**/*.d.ts", "test/**/*.ts"]
 }
