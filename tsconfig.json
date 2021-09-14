@@ -25,5 +25,6 @@
         "libs/api-sdk/src/*"
       ]
     }
-  }
+  },
+  "include": ["src/**/*.d.ts", "src/**/*.ts"]
 }
