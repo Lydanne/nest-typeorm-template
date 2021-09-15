@@ -42,8 +42,9 @@
 - [x] 单元测试
 - [x] E2E 测试
 - [x] 支持 VSCode 单元测试
+- [ ] 支持 GitHook 自动 Prettier 格式化, 自动 ESlint 校验
 
-## VSCode Plugin
+## VSCode Plugin Installation
 
 ```
 名称: Jest
@@ -52,6 +53,24 @@ ID: orta.vscode-jest
 版本: 4.1.2
 发布者: Orta
 VS Marketplace 链接: https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest
+```
+
+```
+名称: ESLint
+ID: dbaeumer.vscode-eslint
+说明: Integrates ESLint JavaScript into VS Code.
+版本: 2.1.25
+发布者: Dirk Baeumer
+VS Marketplace 链接: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+```
+
+```
+名称: Prettier - Code formatter
+ID: esbenp.prettier-vscode
+说明: Code formatter using prettier
+版本: 8.1.0
+发布者: Prettier
+VS Marketplace 链接: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 ```
 
 ## Installation
