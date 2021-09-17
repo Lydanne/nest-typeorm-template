@@ -28,9 +28,8 @@
 
 ## Feature
 
-- [x] Typeorm
+- [x] TypeORM
 - [x] Mongodb
-- [x] Express
 - [x] 自动验证传入参数
 - [x] 自动转换传入参数
 - [x] 自动生成 API 文档
@@ -42,9 +41,8 @@
 - [x] 单元测试
 - [x] E2E 测试
 - [x] 支持 VSCode 单元测试
-- [ ] 支持 GitHook 自动 Prettier 格式化, 自动 ESlint 校验
-- [ ] 支持 Git Commit 校验
-- [ ] 无需编译直接运行（实验）
+- [x] 支持 GitHook 自动 Prettier 格式化, 自动 ESlint 校验，自动校验 Commit
+- [x] 无需编译直接运行模式（实验）
 
 ## VSCode Plugin Installation
 
@@ -103,6 +101,50 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+
+## Env File
+
+```
+.env        通用环境变量文件，所有环境生效，相同变量会被下面环境覆盖
+.env.local  本地环境生效
+.env.dev    预发环境生效
+.env.prod   生产环境生效
+```
+
+> 提示：
+> 需要在生产环境的服务器设置 NODE_ENV 环境变量为 prod 才能正确识别环境
+> 需要在预发环境的服务器设置 NODE_ENV 环境变量为 dev 才能正确识别环境
+> 如果不设置默认为本地环境
+
+## Commit Lint
+```
+type(scope?): subject
+```
+### type
+
+表示提交的类型
+
+```
+  'build',    打包构建之后
+  'chore',    修改配置或者修改文件名等，相当于是其他
+  'ci',       修改CI后  
+  'docs',     修改文档后
+  'feat',     新的特性
+  'fix',      修复bug
+  'perf',     性能优化
+  'refactor', 重构
+  'revert',   重新提交
+  'style',    样式相关
+  'test'      测试相关
+```
+
+### scope
+
+表示模块
+
+### subject
+
+做的事情
 
 ## Support
 
